@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    
+    
+    
+    <TextView 
+        android:id="@+id/FGR3"
+        
+         android:padding="10dp"
+        
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:text=" Valentine’s Day, Mark asked if he could take me for a drive, and when I asked him where we were going he said, “You’ll find out!”
+
+So I get in the car, and he’s, like, “Put this on,” and he hands me a blindfold. And, obviously, at this point, I know something’s up, but I don’t want to say anything, because I don’t want to ruin the surprise!
+
+So we’re driving and driving, and after a few hours I need to use the bathroom. So I’m, like, “Can we stop for a second?” And he’s, like, “Just go in this.” And he hands me a two-litre bottle. And that’s when I hear this loud foghorn. So I take off my blindfold, because enough is enough, and I see that we’re in the middle of an ocean, on some kind of trash barge. And I’m, like, “What is this?” And I see that Mark is crying. And he’s, like, “I got lost. I don’t know where we are. I’m so scared.” And I’m, like, “Where were you trying to drive us?” And he’s, like, “To the karaoke place where we met.” And I’m, like, “That’s only four blocks from our apartment. How could you get so lost?” And he’s, like, “Please don’t yell at me right now!” And so we get out and find the captain, but he barely speaks English. And he refuses to turn the ship around. So Mark takes out this diamond ring—which I guess he’d been planning on giving to me—and he says to him, “If we give this to you, will you take us to land?” And the captain grabs the ring, squints at it, and shakes his head. And so now we’re really fucked, because we have no way to communicate with our families and we’re essentially hostages on this ship. Eventually, we get to Guyana and find the U.S. Embassy. And when we see the American flag we both burst into tears, just out of sheer relief. And Mark’s, like, “Will you marry me?” And I say, “Yes!”"
+        
+        
+        
+        
+        
+        />
+    
+    
+    
+    
+    
+    
+    
+
+</LinearLayout>

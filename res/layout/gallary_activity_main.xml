@@ -1,0 +1,58 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:weightSum="10"
+    android:orientation="vertical"
+     android:background="@drawable/event1"
+    android:cacheColorHint="@android:color/transparent"
+    
+     >
+
+   
+    
+    
+<com.handmark.pulltorefresh.library.PullToRefreshGridView
+     android:background="@android:color/transparent"
+    android:cacheColorHint="@android:color/transparent"
+    android:id="@+id/list"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="6dp"
+    android:numColumns="auto_fit"
+    android:columnWidth="130dp"
+    android:horizontalSpacing="3dp"
+    android:verticalSpacing="3dp"
+    android:gravity="center"
+    android:stretchMode="columnWidth"
+    android:layout_weight="9"
+    android:listSelector="@null"
+    android:fadingEdgeLength="0px"
+    
+     >  
+ 
+</com.handmark.pulltorefresh.library.PullToRefreshGridView>
+
+
+
+<ImageButton
+android:layout_width="50dp"
+android:id="@+id/bottom_button"
+android:layout_height="50dp"
+android:background="@drawable/round_button"
+android:src="@drawable/ic_2"
+android:gravity="center_vertical|center_horizontal"
+android:text="hello"
+android:textColor="#fff"
+android:layout_gravity="center"
+android:layout_marginBottom="10dp"
+android:layout_marginTop="5dp"
+
+ />
+
+
+</LinearLayout>
+
+

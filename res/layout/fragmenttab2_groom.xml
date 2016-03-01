@@ -1,0 +1,115 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    
+     >
+    
+    
+    <FrameLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:id="@+id/layout2"
+        
+  
+        >
+        
+        <ImageView
+            android:id="@+id/headgroom"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:src="@drawable/event1"
+            android:scaleType="fitXY"
+             />
+        
+    </FrameLayout>
+
+    <com.meg7.widget.CircleImageView
+        android:id="@+id/golimagegroom"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/groom1" />
+
+     <TextView
+         android:id="@+id/groomtext"
+         android:layout_width="wrap_content"
+         android:paddingLeft="9dp"
+         android:paddingTop="15dp"
+         android:paddingRight="9dp"
+         android:maxLines = "100"
+
+         android:scrollbars = "vertical"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_below="@+id/golimagegroom"
+         android:layout_marginTop="22dp"
+         android:text="Favorite Movie: Rang de basanti"
+          />
+     
+     
+      <TextView
+         android:id="@+id/groomtext2"
+         android:layout_width="wrap_content"
+         android:paddingLeft="9dp"
+         android:paddingTop="15dp"
+         android:paddingRight="9dp"
+         android:maxLines = "100"
+
+         android:scrollbars = "vertical"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_below="@+id/groomtext"
+         android:layout_marginTop="22dp"
+         android:text="Favorite TV Show : Seinfeld"
+          />
+     
+      
+      
+       <TextView
+         android:id="@+id/groomtext3"
+         android:layout_width="wrap_content"
+         android:paddingLeft="9dp"
+         android:paddingTop="15dp"
+         android:paddingRight="9dp"
+         android:maxLines = "100"
+
+         android:scrollbars = "vertical"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_below="@+id/groomtext2"
+         android:layout_marginTop="22dp"
+         android:text="Favorite Movie: Rang de basanti"
+          />
+      
+       
+       
+        <TextView
+         android:id="@+id/groomtext4"
+         android:layout_width="wrap_content"
+         android:paddingLeft="9dp"
+         android:paddingTop="15dp"
+         android:paddingRight="9dp"
+         android:maxLines = "100"
+
+         android:scrollbars = "vertical"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_below="@+id/groomtext3"
+         android:layout_marginTop="22dp"
+         android:text="Favorite Movie: Rang de basanti"
+          />
+       
+     
+     
+     
+     
+     
+     
+     
+     
+
+</RelativeLayout>

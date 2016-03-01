@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    
+    
+    <TextView 
+        android:id="@+id/FGR1"
+        
+        android:padding="10dp"
+        
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:text="I can remmeber when i met my boyfriend to this day like it was nothing. I had just came home from being out with some friends and all of a sudden, someone knocks at my door and it was one of my friends and him. Well we caught each others eyes from then. I could not take my eyes off of him. Well i remember he took me to Ryan's clear across the water from my house. He was a really nice guy, and then we went out on a few more dates and now we have been together for almost two years. i have never met someone like him before so he was really special to me and i would not give him up for anything. I remeber that day like it was yesterday"
+        
+        
+        
+        
+        
+        
+        
+
+        />
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    
+    
+    <TextView 
+        android:id="@+id/FGR2"
+        
+         android:padding="10dp"
+        
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:text="It might be hard to remember a time before your partner was part of your life. For some it was a very long time ago and for others, not so long at all. But every couple has a story about the night (or day) they officially met each other for the first time and we want to hear about it!
+
+Maybe it was on a college campus, or drunkenly at a bar, or on a blind date or maybe just waiting in line at Starbucks. Maybe it was love at first sight for both of you, one of you or neither of you. Maybe you started out as co-workers or lab partners or two people who hated each other's guts. In any case, each partner probably has a different take on that first encounter."
+        
+        
+        
+        
+        
+        
+        />
+    
+    
+    
+    
+    
+
+</LinearLayout>

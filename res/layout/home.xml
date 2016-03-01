@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/itsnitish"
+                android:weightSum="100"
+                android:id="@+id/l1"
+                
+                xmlns:app="http://schemas.android.com/apk/res/com.eventassociate.weddingapp">
+                
+    
+    
+    
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="67"
+        android:weightSum="100"
+        android:id="@+id/l2"
+        >
+        
+        
+        <LinearLayout
+            
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="57"
+             android:weightSum="100"
+             android:orientation="vertical"
+            android:id="@+id/l3"
+            >
+            
+            
+            
+            <LinearLayout 
+                
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="55"
+                android:orientation="vertical"
+                android:id="@+id/l4"
+                ></LinearLayout>
+            
+            <LinearLayout 
+                 android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="45"
+                android:weightSum="100"
+                android:id="@+id/l5"
+                >
+                
+                
+                <LinearLayout 
+                    android:id="@+id/l5_1"
+                     android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="80"
+                android:orientation="vertical"
+                
+                    ></LinearLayout>
+                
+                <LinearLayout
+                    android:id="@+id/l5_2" 
+                     android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="20"
+                    
+                    >
+                    
+                    
+                    
+                    
+                    
+                      <com.joooonho.SelectableRoundedImageView
+                          
+                          
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/imageView_oval2"
+             android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scaleType="center"
+            android:src="@drawable/bgg2"
+            app:sriv_oval="true"
+            
+            android:layout_marginLeft="3dp"
+            app:sriv_border_width="3dp"
+            app:sriv_border_color="#B79A00"
+             />
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                </LinearLayout>
+               
+                
+                
+                
+                
+                
+                
+            </LinearLayout>
+            
+            
+            
+            
+        </LinearLayout>
+        
+        
+        <LinearLayout 
+          
+            
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="43"
+            android:weightSum="100"
+            android:id="@+id/l6"
+            >
+            
+            <LinearLayout 
+                   android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="18"
+            android:id="@+id/l7"
+            android:weightSum="100"
+            android:orientation="vertical"
+                >
+                
+                <LinearLayout 
+                     android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/l7_1"
+            android:layout_weight="25"
+                    
+                    
+                    >
+                    
+                    
+                    
+                    <com.joooonho.SelectableRoundedImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/imageView_oval3"
+            android:layout_marginTop="4dp"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:adjustViewBounds="true"
+            android:src="@drawable/bgg3"
+            app:sriv_oval="true"
+            app:sriv_border_width="3dp"
+            android:scaleType="center"
+            app:sriv_border_color="#B79A00"
+            
+             /> 
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                </LinearLayout>
+                
+                <LinearLayout 
+                     android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/l7_2"
+            android:layout_weight="75"
+                    android:orientation="vertical"
+                    ></LinearLayout>
+                
+                
+                
+                
+            </LinearLayout>
+            
+            
+             <LinearLayout 
+                   android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="82"
+            android:id="@+id/l8"
+            android:orientation="vertical"
+                ></LinearLayout>
+            
+        </LinearLayout>
+        
+        
+        
+        
+        
+        
+    </LinearLayout>
+    
+   
+    
+    
+    
+    <LinearLayout 
+        
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="33"
+        android:weightSum="100"
+        android:orientation="vertical"
+        android:id="@+id/l9"
+  
+        >
+        <LinearLayout 
+             android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+            android:layout_weight="20"
+            android:id="@+id/l10"
+            android:weightSum="100"
+            
+            >
+            
+            
+            <LinearLayout 
+                
+                  android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/l10_1"
+        android:orientation="vertical"
+                android:layout_weight="95"
+                ></LinearLayout>
+            
+            
+            
+            
+            <LinearLayout 
+                android:id="@+id/l10_2"
+                  android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="5"
+                
+                >
+                
+              
+                <com.joooonho.SelectableRoundedImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/imageView_oval"
+              android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="4dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+           app:sriv_border_width="4dp"
+            app:sriv_border_color="#A48A00"
+             android:adjustViewBounds="true"
+    android:scaleType="fitCenter"
+            android:src="@drawable/bgg1"
+            app:sriv_oval="true"
+            
+             /> 
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+            </LinearLayout>
+            
+        </LinearLayout>
+        
+        <LinearLayout 
+             android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="80"
+            android:id="@+id/l11"
+            android:weightSum="100"
+            android:orientation="vertical"
+            
+            
+            >
+           
+                
+                
+            
+                
+                
+                
+                <TextView 
+                    
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/shimmer"
+                    android:layout_gravity="center"
+                    android:text="Swipe for Menu"
+                    android:textSize="40dp"
+                    android:padding="10dp"
+                    android:textColor="#55dce7"
+                    android:background="#800000"
+                    
+               
+                    />
+                
+                
+                
+                
+          
+           
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        </LinearLayout>
+        
+        
+        
+        
+    </LinearLayout>
+  
+</LinearLayout>
+
+ 
+
+
+

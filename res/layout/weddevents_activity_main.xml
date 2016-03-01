@@ -1,0 +1,205 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/event1"
+    tools:context=".MainActivity"
+    android:orientation="horizontal"
+    android:weightSum="100"
+     >
+    
+    <LinearLayout 
+        
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/lay1"
+        android:layout_weight="45"
+        
+        
+        
+        ></LinearLayout>
+    
+    
+    <LinearLayout 
+        
+         android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/lay2"
+        android:layout_weight="10"
+        android:weightSum="100"
+        android:orientation="vertical"
+        
+        
+        
+        >
+        
+        
+        
+       <LinearLayout 
+           android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/lay2_1"
+        android:layout_weight="47"
+           
+           ></LinearLayout> 
+    
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/lay2_2"
+        android:layout_weight="6"
+        android:background="@drawable/nasa2"
+        android:weightSum="100"
+        android:orientation="horizontal"
+        
+        >
+        
+        
+        <LinearLayout 
+            android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/lay2_2_1"
+        android:layout_weight="42"
+            
+            ></LinearLayout>
+        
+        
+        
+        <LinearLayout 
+             android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/lay2_2_2"
+        android:layout_weight="13"
+        android:weightSum="100"
+        android:orientation="vertical"
+            
+            >
+            
+            <LinearLayout 
+                 android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/lay2_2_2_1"
+        android:layout_weight="45"
+                
+                ></LinearLayout>
+            
+            
+            <LinearLayout 
+                 android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/lay2_2_2_2"
+        android:layout_weight="10"
+                
+                >
+                
+                
+                 <ListView
+        android:id="@+id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        
+        android:background="@android:color/transparent"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@color/list_divider"
+        android:dividerHeight="1dp"
+        
+         >
+    </ListView>
+ 
+                
+                
+                
+                
+                
+            </LinearLayout>
+            
+            
+            <LinearLayout 
+                 android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/lay2_2_2_3"
+        android:layout_weight="45"
+                
+                
+                ></LinearLayout>
+            
+            
+                       
+            
+            
+            
+            
+            
+        </LinearLayout>
+        
+        
+        <LinearLayout 
+             android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/lay2_2_3"
+        android:layout_weight="45"
+            
+            ></LinearLayout>
+        
+        
+        
+        
+        
+        
+        
+        
+    </LinearLayout>
+            
+        
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/lay2_3"
+        android:layout_weight="47"
+        
+        
+        
+        ></LinearLayout>
+
+   
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    </LinearLayout>
+    
+    
+    <LinearLayout 
+         android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/lay3"
+        android:layout_weight="45"
+        
+        
+        
+        ></LinearLayout>
+     
+
+  
+
+</LinearLayout>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#000000"
+    
+    android:weightSum="100"
+    
+    >
+	
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/mid1"
+        android:layout_weight="70"
+        
+        
+        >
+        
+         <com.joooonho.SelectableRoundedImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/imageMap"
+            android:layout_gravity="center"
+            
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+           app:sriv_border_width="3dp"
+            app:sriv_border_color="#A22B13"
+            android:scaleType="fitXY"
+            android:src="@drawable/baraat"
+            android:padding="4dp"
+            
+            
+             /> 
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    </LinearLayout>
+    
+   
+    
+    
+   
+   
+   
+   <FrameLayout 
+       android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+       android:layout_weight="30"
+       
+       >
+   
+   <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/mid2"
+        android:orientation="vertical"
+        
+   
+       >
+       
+       
+       
+       
+       
+       <ListView
+        android:id="@+id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="300dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="10dp"
+        android:background="@android:color/transparent"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@color/list_divider"
+        android:dividerHeight="1dp"
+        
+         >
+    </ListView>
+    
+       
+
+   </LinearLayout>
+   
+   
+    <TextView 
+                    
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/shimmer2"
+                    android:layout_gravity="center|bottom"
+                    android:text="Click to navigate"
+                    android:textSize="35dp"
+                    android:padding="10dp"
+                    android:textColor="#ffffff"
+                    android:background="#800000"
+                    android:layout_marginBottom="45dp"
+                    
+               
+                    />
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   </FrameLayout>
+        
+        
+        
+        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+</LinearLayout>

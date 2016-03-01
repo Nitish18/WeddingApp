@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/weddingplanner"
+    android:id="@+id/lin_lay"
+    android:weightSum="100"
+    
+     >
+
+    
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/nik1"
+    android:layout_weight="45"
+    android:orientation="vertical"
+    android:weightSum="100"
+        
+        >
+        
+       <LinearLayout 
+           android:layout_width="fill_parent"
+           android:layout_height="fill_parent"
+           android:layout_weight="80"
+           
+           
+           
+           ></LinearLayout>
+       
+       <LinearLayout 
+           android:layout_width="fill_parent"
+           android:layout_height="fill_parent"
+           android:layout_weight="20"
+           android:orientation="vertical"
+           
+           
+           
+           >
+           
+            <TextView 
+            
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/shim1"
+            android:text="Neha"
+            android:textSize="60dp"
+            android:layout_gravity="center"
+            android:textColor="#E5C100"
+            />
+            
+            
+              <TextView 
+            
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/shim2"
+            android:text="weds"
+            android:textSize="45dp"
+            android:layout_gravity="center"
+            android:textColor="#E5C100"
+            />
+              
+              
+               <TextView 
+            
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/shim3"
+            android:text="Nishant"
+            android:textSize="60dp"
+            android:layout_gravity="center"
+            android:textColor="#E5C100"
+            />
+            
+            
+           
+       </LinearLayout>
+       
+       
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    </LinearLayout>
+    
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/nik2"    
+    android:layout_weight="55"  
+    android:orientation="vertical"  
+    android:weightSum="100"
+        >
+        
+        <LinearLayout 
+            
+            android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="80"
+    android:gravity="center"
+            
+            >
+            
+            
+        
+            
+            
+            
+        </LinearLayout>
+        
+        
+         <LinearLayout 
+            
+            android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="20"
+            
+            >
+             
+             
+             <FrameLayout 
+                 
+                 android:layout_width="fill_parent"
+                 android:layout_height="fill_parent"
+                 
+                 
+                 >
+                 
+                 
+                 
+                
+                 
+                 
+       
+        
+        
+        
+         <Button
+          android:id="@+id/without_login"
+          android:layout_width="200dp"
+          android:layout_height="wrap_content"
+          android:layout_alignParentBottom="true"
+          android:layout_centerHorizontal="true"
+          
+          android:background="@drawable/button_green"
+          
+          android:layout_gravity="center"
+          android:text="ENTER"
+          android:textColor="#5D5214"
+          android:visibility="gone"
+          
+           />
+
+         <ProgressBar
+             android:id="@+id/proBar"
+             style="?android:attr/progressBarStyleLarge"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center"
+             android:progressDrawable="@drawable/mycol"
+             
+             
+              />
+                 
+             </FrameLayout>
+        
+        
+       
+        
+        
+
+        
+        
+        </LinearLayout>
+        
+        
+        
+        
+        
+    </LinearLayout>
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+</LinearLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/weddingplanner"
+    android:weightSum="100"
+    
+    
+     >
+     
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_weight="70"
+        
+        
+        
+        >
+        
+         <com.joooonho.SelectableRoundedImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/imageAce"
+            android:layout_gravity="center"
+            
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+           app:sriv_border_width="3dp"
+            app:sriv_border_color="#A22B13"
+            android:scaleType="fitXY"
+            android:src="@drawable/wplogo2"
+            android:padding="8dp"
+            
+            
+             /> 
+      
+        
+        
+        
+        
+        
+        
+    </LinearLayout>
+    
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_weight="30"
+    >
+    <TextView 
+        android:id="@+id/weddingplannertext"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:textColor="#F5F5F5"
+        android:textSize="16dp"
+        
+        android:text="On this page the wedding planner can put information about their company, along with phone no., so guests who want to hire the planner can directly call!"
+       
+        />
+    
+    
+    
+    </LinearLayout>
+    
+
+</LinearLayout>

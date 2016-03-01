@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:orientation="vertical"
+    android:background="#000000"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:text="Photo Caption :-"
+        android:textSize="20sp"
+        android:textColor="#dc6800"
+        
+         />
+
+    <EditText
+        android:id="@+id/meal_name"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:background="#ffffff"
+        
+        android:layout_gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        
+         />
+
+    <Spinner
+        android:id="@+id/rating_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+         />
+
+    <ImageButton
+        android:id="@+id/photo_button"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_action_photo"
+        android:background="#dc6800"
+        android:layout_gravity="center"
+        
+        
+        android:layout_marginTop="20dp"
+        
+         />
+
+    <Button
+        android:id="@+id/save_button"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:background="#dc6800"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        
+         />
+
+    <Button
+        android:id="@+id/cancel_button"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+         android:background="#dc6800"
+         
+         android:layout_gravity="center"
+         android:layout_marginTop="15dp"
+         />
+
+    <com.parse.ParseImageView
+        android:id="@+id/meal_preview_image"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:background="@drawable/imgborder"
+         />
+
+</LinearLayout>

@@ -1,0 +1,781 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.eventassociate.weddingapp"
+    android:versionCode="2"
+    android:versionName="2.0" >
+
+    <uses-permission android:name="com.example.weddingapp.permission.MAPS_RECEIVE" />
+
+   <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="16" />
+
+    <permission
+        android:name="com.example.weddingapp.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+   
+   
+
+    <!-- GCM connects to Internet Services. -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <!-- GCM requires a Google account. -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
+    <!-- Keeps the processor from sleeping when a message is received. -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    
+
+    
+    
+    <!-- Network State Permissions to detect Internet status -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- Permission to vibrate -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+   
+
+    
+   
+    
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+   
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+   
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+    
+    
+    
+	<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+	
+	<uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+	<!--
+	  IMPORTANT: If you change the package name of this sample app, change
+	  "com.parse.tutorials.pushnotifications.permission.C2D_MESSAGE" in the
+	  lines below to match the new package name.
+	-->
+	<permission android:name="com.example.weddingapp.permission.C2D_MESSAGE"
+		android:protectionLevel="signature" />
+	<uses-permission android:name="com.example.weddingapp.permission.C2D_MESSAGE" />
+    
+   
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:name="com.androidhive.xmlparsing.AppController"
+        android:allowBackup="true"
+        android:icon="@drawable/icc"
+        android:label="@string/app_name"
+        android:theme="@style/MyTheme"
+        
+         >
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyDEwNhPieutNCfB5hbLxTtKl5arwBtBpU4" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name="com.example.weddingapp.Splash"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        
+         
+         <activity
+            android:name="notification.MainActivity"
+            android:label="@string/app_name"
+            
+             >
+            <intent-filter>
+                <action android:name="android.intent.action.MAINACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+         
+          <activity
+            android:name="com.example.weddingapp.WeddingPlanner"
+            android:label="About Wedding PLanner"
+            
+             >
+            <intent-filter>
+                <action android:name="android.intent.action.WEDDINGPLANNER" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            
+             <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.example.ParentActivity" />
+            
+        </activity>
+        
+         
+         
+         <activity
+            android:name="contacts.Contact"
+            android:label="Contacts"
+            
+             >
+            <intent-filter>
+                <action android:name="android.intent.action.CONTACT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            
+             <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.example.ParentActivity" />
+        </activity>
+        
+         
+           <activity
+            android:name="com.example.weddingapp.RSVP"
+            android:label="RSVP"
+            
+             >
+            <intent-filter>
+                <action android:name="android.intent.action.RSVP" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            
+             <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.example.ParentActivity" />
+            
+            
+        </activity>
+         
+         
+         
+         
+         
+         
+         
+         
+         
+        
+         
+         
+         
+         <activity
+            android:name="accomodation.Accomomain"
+            android:label="Accomodation"
+            
+             >
+            <intent-filter>
+                <action android:name="android.intent.action.ACCOMOMAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            
+            <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.example.ParentActivity" />
+            
+        </activity>
+         
+         
+         
+         
+         <activity
+            android:name="bride_groom.Bridegroom"
+            android:label="Our Story"
+            
+             >
+            <intent-filter>
+                <action android:name="android.intent.action.ACCOMOMAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            
+             <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.example.ParentActivity" />
+            
+            
+        </activity>
+         
+         
+        
+         
+         
+         
+           <activity
+            android:name="images_static.FlipHorizontalLayoutActivity"
+            android:label="Album"
+            
+             >
+            <intent-filter>
+                <action android:name="android.intent.action.FLIPHORIZONTALLAYOUTACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+             <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.example.ParentActivity" />
+            
+        </activity>
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+        
+        
+        
+          <activity
+            android:name="databasephoto.FullImageActivity"
+            android:label="Photos" >
+            <intent-filter>
+                <action android:name="android.intent.action.FULLIMAGEACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            
+             <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.example.ParentActivity" />
+            
+        </activity>
+        
+          
+           
+        
+         <activity
+            android:name="com.androidhive.xmlparsing.MainActivity"
+            android:label="Navigation" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAINACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            
+             <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.example.ParentActivity" />
+            
+        </activity>
+          
+          
+          
+          
+          
+          
+         
+         
+         
+        
+        
+         
+        
+        
+        
+        
+          
+        <activity
+            android:name="com.example.weddingapp.RegisterActivity"
+            android:label="Register with us" >
+            <intent-filter>
+                <action android:name="android.intent.action.REGISTERACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            
+             <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.example.ParentActivity" />
+            
+        </activity>
+        
+        
+        
+          <activity
+            android:name="aboutus_groom.Aboutus_groom"
+            android:label="Groom" >
+            <intent-filter>
+                <action android:name="android.intent.action.ABOUTUS_GROOM" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            
+             <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.example.ParentActivity" />
+            
+        </activity>
+        
+          
+          
+           <activity
+            android:name="album.MainActivity"
+            android:label="Album" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAINACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            
+             <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.example.ParentActivity" />
+            
+        </activity>
+        
+           
+           
+            <activity
+            android:name="album.FullImageActivity"
+            android:label="Album" >
+            <intent-filter>
+                <action android:name="android.intent.action.FULLIMAGEACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            
+             <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.example.ParentActivity" />
+            
+        </activity>
+           
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+        
+        
+        
+        
+        
+        
+        
+        <activity
+            android:name="aboutuscontent.Aboutus_story"
+            android:label="About Us" >
+            <intent-filter>
+                <action android:name="android.intent.action.ABOUTUS_STORY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            
+             <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.example.ParentActivity" />
+            
+        </activity>
+        
+        
+        <activity
+            android:name="com.example.weddingapp.MainActivity2"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAINACTIVITY2" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            
+             <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.example.ParentActivity" />
+            
+        </activity>
+        
+        
+        
+         <activity
+            android:name="android.view.ext.SatelliteMenuActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.SATELLITEMENUACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            
+            
+             <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.example.ParentActivity" />
+            
+        </activity>
+        
+        
+        
+         
+        
+        
+         <activity
+            android:name="aboutuscontent.Aboutus"
+            android:label="Bride" >
+            <intent-filter>
+                <action android:name="android.intent.action.ABOUTUS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            
+             <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.example.ParentActivity" />
+            
+        </activity>
+        
+        
+        
+        
+        <activity
+            android:name="databasephoto.MainActivity"
+            android:label="Gallery" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAINACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            
+             <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.example.ParentActivity" />
+            
+        </activity>
+        
+        
+         <activity
+            android:name="events.MainActivity"
+            android:label="Events" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAINACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            
+             <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.example.ParentActivity" />
+            
+            
+        </activity>
+        
+         
+       
+        
+        
+        
+        
+             
+        
+       
+        
+       
+        
+        <activity
+            android:name="com.example.weddingapp.MainActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAINACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+       
+        <activity
+            android:name="com.example.hive.MainActivity"
+            android:label="Gallery" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAINACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            
+             <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.example.ParentActivity" />
+            
+        </activity>
+        <activity
+            android:name="com.example.hive.UploadActivity"
+            android:label="Upload Picture" >
+            <intent-filter>
+                <action android:name="android.intent.action.UPLOADACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            
+             <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.example.ParentActivity" />
+            
+        </activity>
+        <activity
+            android:name="com.example.weddingapp.About"
+            android:label="About" >
+            <intent-filter>
+                <action android:name="android.intent.action.ABOUT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.weddingapp.Chat"
+            android:label="Chat" >
+            <intent-filter>
+                <action android:name="android.intent.action.CHAT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            
+             <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.example.ParentActivity" />
+            
+        </activity>
+        <activity
+            android:name="com.example.finalchat.Chat_username"
+            android:label="Chat" >
+            <intent-filter>
+                <action android:name="android.intent.action.CHAT_USERNAME" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+             <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.example.ParentActivity" />
+            
+        </activity>
+        <activity
+            android:name="com.example.weddingapp.Gallary"
+            android:label="Gallary" >
+            <intent-filter>
+                <action android:name="android.intent.action.GALLARY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            
+             <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.example.ParentActivity" />
+            
+        </activity>
+       
+        <activity
+            android:name="com.example.weddingapp.Home_Image"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.HOME_IMAGE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            
+             <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.example.ParentActivity" />
+            
+            
+        </activity>
+        <activity
+            android:name="com.example.weddingapp.Howtoreach"
+            android:label="Reach" 
+            android:screenOrientation="portrait"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.HOWTOREACH" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+             <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.example.ParentActivity" />
+            
+        </activity>
+        <activity
+            android:name="com.example.weddingapp.NewMealActivity"
+            android:label="@string/title_activity_new_meal" >
+        </activity>
+        <activity
+            android:name="com.example.weddingapp.MealListActivity"
+            android:label="@string/title_activity_meal_list" >
+            <intent-filter>
+                <action android:name="android.intent.action.MEALLISTACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="android.app.Activity" />
+        </activity>
+        <activity
+            android:name="com.example.weddingapp.Notify_main"
+            android:label="Notification" >
+            <intent-filter>
+                <action android:name="android.intent.action.NOTIFY_MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            
+             <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.example.ParentActivity" />
+            
+        </activity>
+        
+        
+        <activity
+            android:name="com.example.finalchat.MainActivity_chat"
+            android:label="Chat" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAINACTIVITY_CHAT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            
+             <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.example.ParentActivity" />
+             
+        </activity>
+        <activity
+            android:name="com.androidhive.xmlparsing.AndroidXMLParsingActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.ANDROIDXMLPARSINGACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            
+             <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.example.ParentActivity" />
+        </activity>
+        <activity
+            android:name="com.androidhive.xmlparsing.SingleMenuItemActivity"
+            android:label="Navigation" >
+        </activity>
+        
+        <activity
+            android:name="com.meg7.samples.SamplesActivity"
+            android:label="Extras" >
+            <intent-filter>
+                <action android:name="android.intent.action.SAMPLESACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+             <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.example.ParentActivity" />
+            
+        </activity>
+        
+        
+        
+         <activity
+            android:name="com.example.finalchat.gpluslogin"
+            android:label="Chat" >
+            <intent-filter>
+                <action android:name="android.intent.action.GPLUSLOGIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            
+             <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.example.ParentActivity" />
+            
+        </activity>
+        
+        
+        
+        
+        
+        
+        <activity
+            android:name="com.example.weddingapp.AndroidFacebookConnectActivity"
+            android:label="Social" >
+            <intent-filter>
+                <action android:name="android.intent.action.ANDROIDFACEBOOKCONNECTACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            
+             <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.example.ParentActivity" />
+            
+        </activity>
+        
+        
+         <service android:name="com.parse.PushService" />
+		<receiver android:name="com.parse.ParseBroadcastReceiver">
+			<intent-filter>
+				<action android:name="android.intent.action.BOOT_COMPLETED" />
+				<action android:name="android.intent.action.USER_PRESENT" />
+			</intent-filter>
+		</receiver>
+		<receiver android:name="com.parse.GcmBroadcastReceiver"
+			android:permission="com.google.android.c2dm.permission.SEND">
+			<intent-filter>
+				<action android:name="com.google.android.c2dm.intent.RECEIVE" />
+				<action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+				<!--
+				  IMPORTANT: If you change the package name of this sample app,
+				  change "com.parse.tutorials.pushnotifications" in the lines
+				  below to match the new package name.
+				-->
+				<category android:name="com.example.weddingapp" />
+			</intent-filter>
+		</receiver>
+        
+        
+      
+    
+  
+        
+    </application>
+    
+    
+</manifest>
